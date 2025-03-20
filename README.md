@@ -1,1 +1,2 @@
-# UIKTP-Project-
+# UIKTP-Project
+Онлајн платформа за приватни часови
