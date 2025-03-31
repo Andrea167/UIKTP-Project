@@ -1067,6 +1067,35 @@
             "rid": "win"
           }
         }
+      },
+      "EducationSystem.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13"
+        },
+        "compile": {
+          "bin/placeholder/EducationSystem.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EducationSystem.Domain.dll": {}
+        }
+      },
+      "EducationSystem.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EducationSystem.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13"
+        },
+        "compile": {
+          "bin/placeholder/EducationSystem.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EducationSystem.Repository.dll": {}
+        }
       }
     }
   },
@@ -2879,32 +2908,44 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EducationSystem.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EducationSystem.Domain/EducationSystem.Domain.csproj",
+      "msbuildProject": "../EducationSystem.Domain/EducationSystem.Domain.csproj"
+    },
+    "EducationSystem.Repository/1.0.0": {
+      "type": "project",
+      "path": "../EducationSystem.Repository/EducationSystem.Repository.csproj",
+      "msbuildProject": "../EducationSystem.Repository/EducationSystem.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EducationSystem.Domain >= 1.0.0",
+      "EducationSystem.Repository >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.13"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\mario\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\UIKTP\\EducationSystem.Service\\EducationSystem.Service.csproj",
+      "projectUniqueName": "C:\\Users\\mario\\Desktop\\UIKTP-Project\\EducationSystem.Service\\EducationSystem.Service.csproj",
       "projectName": "EducationSystem.Service",
-      "projectPath": "C:\\Users\\User\\Desktop\\UIKTP\\EducationSystem.Service\\EducationSystem.Service.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\UIKTP\\EducationSystem.Service\\obj\\",
+      "projectPath": "C:\\Users\\mario\\Desktop\\UIKTP-Project\\EducationSystem.Service\\EducationSystem.Service.csproj",
+      "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mario\\Desktop\\UIKTP-Project\\EducationSystem.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2913,12 +2954,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mario\\Desktop\\UIKTP-Project\\EducationSystem.Domain\\EducationSystem.Domain.csproj": {
+              "projectPath": "C:\\Users\\mario\\Desktop\\UIKTP-Project\\EducationSystem.Domain\\EducationSystem.Domain.csproj"
+            },
+            "C:\\Users\\mario\\Desktop\\UIKTP-Project\\EducationSystem.Repository\\EducationSystem.Repository.csproj": {
+              "projectPath": "C:\\Users\\mario\\Desktop\\UIKTP-Project\\EducationSystem.Repository\\EducationSystem.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2962,7 +3011,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
