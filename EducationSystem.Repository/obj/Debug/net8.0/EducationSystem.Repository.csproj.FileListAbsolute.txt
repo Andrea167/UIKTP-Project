@@ -1,4 +1,5 @@
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\bin\Debug\net8.0\EducationSystem.Repository.deps.json
+C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\bin\Debug\net8.0\EducationSystem.Repository.runtimeconfig.json
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\bin\Debug\net8.0\EducationSystem.Repository.dll
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\bin\Debug\net8.0\EducationSystem.Repository.pdb
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\bin\Debug\net8.0\EducationSystem.Domain.dll
@@ -13,4 +14,5 @@ C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\obj\Debug\net8.0
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\obj\Debug\net8.0\EducationSystem.Repository.dll
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\obj\Debug\net8.0\refint\EducationSystem.Repository.dll
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\obj\Debug\net8.0\EducationSystem.Repository.pdb
+C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\obj\Debug\net8.0\EducationSystem.Repository.genruntimeconfig.cache
 C:\Users\mario\Desktop\UIKTP-Project\EducationSystem.Repository\obj\Debug\net8.0\ref\EducationSystem.Repository.dll

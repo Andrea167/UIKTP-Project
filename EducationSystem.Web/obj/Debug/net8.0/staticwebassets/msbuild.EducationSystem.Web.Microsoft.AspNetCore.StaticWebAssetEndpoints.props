@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EducationSystem.Web.rb0or8jsr8.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WZ1dvOlq\u002BFLguc90GYjuIqgu4NKQqb8UJ\u002BaS/j04Kh4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WZ1dvOlq\u002BFLguc90GYjuIqgu4NKQqb8UJ\u002BaS/j04Kh4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 31 Mar 2025 19:27:37 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WZ1dvOlq\u002BFLguc90GYjuIqgu4NKQqb8UJ\u002BaS/j04Kh4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 20:59:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EducationSystem.Web/EducationSystem.Web.rb0or8jsr8.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\EducationSystem.Web.rb0or8jsr8.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rb0or8jsr8"},{"Name":"integrity","Value":"sha256-WZ1dvOlq\u002BFLguc90GYjuIqgu4NKQqb8UJ\u002BaS/j04Kh4="},{"Name":"label","Value":"_content/EducationSystem.Web/EducationSystem.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WZ1dvOlq\u002BFLguc90GYjuIqgu4NKQqb8UJ\u002BaS/j04Kh4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 31 Mar 2025 19:27:37 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WZ1dvOlq\u002BFLguc90GYjuIqgu4NKQqb8UJ\u002BaS/j04Kh4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 20:59:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EducationSystem.Web/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
