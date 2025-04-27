@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Implementation\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
   <ItemGroup>

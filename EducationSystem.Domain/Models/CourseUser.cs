@@ -12,7 +12,7 @@ namespace EducationSystem.Domain.Models
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
 
-        public virtual ICollection<MyCourses> MyCourses { get; set; } = new List<MyCourses>();
-        public virtual ICollection<UserQuizAttempt> UserQuizAttempts { get; set; } = new List<UserQuizAttempt>();
+        public ICollection<MyCourses>? MyCourses { get; set; }
+        public ICollection<UserQuizAttempt>? UserQuizAttempts { get; set; }
     }
 }

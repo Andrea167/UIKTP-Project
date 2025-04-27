@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace EducationSystem.Domain.Models
 {
-    public class Author
+    public class Author : BaseEntity
     {
         [Key]
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Bio { get; set; }
 
-        public ICollection<Course> Courses { get; set; }
+        public ICollection<Course>? Courses { get; set; }
     }
 }

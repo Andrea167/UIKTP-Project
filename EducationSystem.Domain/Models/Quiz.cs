@@ -18,6 +18,8 @@ namespace EducationSystem.Domain.Models
         public Guid CourseId { get; set; }
         public Course Course { get; set; }
 
-        public ICollection<Question> Questions { get; set; }
+        public ICollection<Question>? Questions { get; set; }
+        public ICollection<UserQuizAttempt>? UserQuizAttempts { get; set; }
+
     }
 }

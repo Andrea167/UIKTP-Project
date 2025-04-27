@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EducationSystem.Domain.Models
 {
-    public class Answer
+    public class Answer : BaseEntity
     {
         [Key]
         public Guid Id { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EducationSystem.Domain.Models
 {
-    public class Course
+    public class Course : BaseEntity
     {
         [Key]
         public Guid Id { get; set; }
@@ -19,7 +19,7 @@ namespace EducationSystem.Domain.Models
         public Guid AuthorId { get; set; }
         public Author Author { get; set; }
 
-        public ICollection<Quiz> Quizzes { get; set; }
-        public ICollection<MyCourses> MyCourses { get; set; }
+        public ICollection<Quiz>? Quizzes { get; set; }
+        public ICollection<MyCourses>? MyCourses { get; set; }
     }
 }

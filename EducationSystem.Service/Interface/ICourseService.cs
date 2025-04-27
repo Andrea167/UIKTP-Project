@@ -1,13 +1,12 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EducationSystem.Domain.Identity
+namespace EducationSystem.Service.Interface
 {
-    class StudentUser
+    internal interface ICourseService
     {
     }
 }

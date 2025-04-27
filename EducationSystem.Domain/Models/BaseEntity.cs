@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EducationSystem.Domain
+namespace EducationSystem.Domain.Models
 {
     public class BaseEntity
     {

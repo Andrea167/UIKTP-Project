@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EducationSystem.Domain.Models
 {
-    public class Question 
+    public class Question : BaseEntity
     {
         [Key]
         public Guid Id { get; set; }
@@ -18,6 +18,6 @@ namespace EducationSystem.Domain.Models
         public Guid QuizId { get; set; }
         public Quiz Quiz { get; set; }
 
-        public ICollection<Answer> Answers { get; set; }
+        public ICollection<Answer>? Answers { get; set; }
     }
 }

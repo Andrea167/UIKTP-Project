@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EducationSystem.Repository.Interface
+namespace EducationSystem.Service.Implementation
 {
-    internal interface ICourseRepository
+    internal class CoursesService
     {
     }
 }
