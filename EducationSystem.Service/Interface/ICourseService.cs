@@ -1,12 +1,14 @@
-﻿using System;
+﻿using EducationSystem.Domain.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EducationSystem.Service.Interface
 {
-    internal interface ICourseService
+    public interface ICourseService
     {
+        Task<List<Course>> GetAllCoursesAsync();
+        Task<Course> GetCourseByIdAsync(Guid courseId);
+        Task<List<Course>> GetCoursesFilteredAsync(string searchTerm);
     }
 }
