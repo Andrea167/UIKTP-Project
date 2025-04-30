@@ -1,21 +1,34 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EducationSystem.Web.Models;
+using EducationSystem.Service.Interface;
 
-namespace EducationSystem.Web.Controllers;
-
-public class HomeController : Controller
+namespace EducationSystem.Web.Controllers
 {
-    private readonly ICourseService _courseService;
 
-    public HomeController(ICourseService courseService)
+    public class HomeController : Controller
     {
-        _courseService = courseService;
-    }
+        private readonly ILogger<HomeController> _logger;
 
-    public async Task<IActionResult> Index(string search)
-    {
-        var courses = await _courseService.GetCoursesFilteredAsync(search);
-        return View(courses);
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EzVyfqikn/8=",
+  "dgSpecHash": "/ZTcNff7PDE=",
   "success": true,
-  "projectFilePath": "D:\\FAX\\CURRENT\\UIKT\\UIKTP\\EducationSystem.Service\\EducationSystem.Service.csproj",
+  "projectFilePath": "C:\\Users\\Media\\UIKTP-Project\\EducationSystem.Service\\EducationSystem.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Media\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Media\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,5 +1,6 @@
 ﻿using EducationSystem.Domain.Models;
 using EducationSystem.Repository.Interface;
+using EducationSystem.Repository.Interfaces;
 using EducationSystem.Service.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;

@@ -1,23 +1,33 @@
-﻿using EducationSystem.Service.Interface;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using EducationSystem.Domain.Models;
 using System.Threading.Tasks;
 
-namespace EducationSystem.Web.Controllers
+public class CoursesController : Controller
 {
-    public class CourseController : Controller
+    private readonly ICourseService _courseService;
+
+    public CoursesController(ICourseService courseService)
     {
-        private readonly ICourseService _courseService;
+        _courseService = courseService;
+    }
 
-        public CourseController(ICourseService courseService)
+    // GET: /Courses
+    public async Task<IActionResult> Index()
+    {
+        var courses = await _courseService.GetCoursesAsync();
+        return View(courses); // Pass list to the view
+    }
+
+    // GET: /Courses/Details/{id}
+    public async Task<IActionResult> Details(Guid id)
+    {
+        var course = await _courseService.GetCourseByIdAsync(id);
+        if (course == null)
         {
-            _courseService = courseService;
+            return NotFound();
         }
 
-        public async Task<IActionResult> Details(Guid id)
-        {
-            var course = await _courseService.GetCourseByIdAsync(id);
-            return View(course);
-        }
+        return View(course); // Show details page
     }
 }
+
