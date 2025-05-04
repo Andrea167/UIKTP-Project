@@ -7,3 +7,4 @@ public interface ICourseService
     Task<IEnumerable<Course>> GetCoursesAsync();
     Task<Course> GetCourseByIdAsync(Guid id);
 }
+

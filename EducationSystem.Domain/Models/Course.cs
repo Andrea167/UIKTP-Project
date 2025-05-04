@@ -21,5 +21,7 @@ namespace EducationSystem.Domain.Models
 
         public ICollection<Quiz>? Quizzes { get; set; }
         public ICollection<MyCourses>? MyCourses { get; set; }
+        public ICollection<CourseModule>? Modules { get; set; }
+
     }
 }

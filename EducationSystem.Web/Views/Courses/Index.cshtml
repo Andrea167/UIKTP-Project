@@ -1,15 +1,41 @@
 ﻿@model IEnumerable<EducationSystem.Domain.Models.Course>
 
-<h2>Courses</h2>
+<h2 class="mb-4">📚 Browse Courses</h2>
 
 <div class="row">
     @foreach (var course in Model)
     {
         <div class="col-md-4">
-            <div class="card mb-3">
+            <div class="card shadow-sm mb-4 rounded-3 border-0">
                 <div class="card-body">
-                    <h5 class="card-title">@course.Title</h5>
-                    <p class="card-text">@course.Description</p>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-journal-bookmark-fill fs-3 text-primary me-2"></i>
+                        <h5 class="card-title mb-0">@course.Title</h5>
+                    </div>
+
+                    <p class="text-muted">@course.Description</p>
+
+                    <p class="mb-1"><i class="bi bi-person-fill text-secondary me-1"></i> <strong>Author:</strong> @course.Author?.Name</p>
+
+                    @if (course.Modules != null && course.Modules.Any())
+                    {
+                        <p class="mb-1"><strong><i class="bi bi-list-ul me-1 text-secondary"></i>Modules:</strong></p>
+                        <ul class="list-group list-group-flush small">
+                            @foreach (var module in course.Modules)
+                            {
+                                <li class="list-group-item">@module.Title</li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted"><em>No modules available</em></p>
+                    }
+                    <form asp-controller="MyCourses" asp-action="Enroll" method="post">
+                        <input type="hidden" name="courseId" value="@course.Id" />
+                        <button type="submit" class="btn btn-success mt-2">Enroll</button>
+                    </form>
+
                 </div>
             </div>
         </div>

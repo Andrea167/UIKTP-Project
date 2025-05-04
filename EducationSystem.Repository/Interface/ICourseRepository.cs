@@ -1,12 +1,10 @@
 ﻿using EducationSystem.Domain.Models;
+using EducationSystem.Repository.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-public interface ICourseRepository
+public interface ICourseRepository : IRepository<Course>
 {
-    Task<IEnumerable<Course>> GetAllCoursesAsync();
-    Task<Course> GetCourseByIdAsync(Guid id);
-    Task AddCourseAsync(Course course);
-    Task UpdateCourseAsync(Course course);
-    Task DeleteCourseAsync(Guid id);
+    Task<IEnumerable<Course>> GetAllCoursesWithAuthorAndModulesAsync();
 }
+

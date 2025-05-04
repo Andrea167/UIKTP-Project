@@ -2,10 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using EducationSystem.Domain.Models;
 using EducationSystem.Repository;
 using EducationSystem.Repository.Interfaces;
-using EducationSystem.Repository.Implementation;
-using EducationSystem.Service.Interface;
 using EducationSystem.Service.Implementation;
-using EducationSystem.Repository.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,13 +20,11 @@ builder.Services.AddControllersWithViews();
 
 // Register Repositories
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped<IUserQuizAttemptRepository, UserQuizAttemptRepository>();
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+
 
 // Register Services
 builder.Services.AddScoped<ICourseService, CourseService>();
-builder.Services.AddScoped<IQuizService, QuizService>();
-builder.Services.AddScoped<IUserQuizAttemptService, UserQuizAttemptService>();
-builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
 
 var app = builder.Build();
